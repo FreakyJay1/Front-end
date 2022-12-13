@@ -38,7 +38,7 @@ section{
 /* heading */
 .heading{
     text-align: center;
-    font-size: 42px;
+    font-size: 36px;
     padding: 1rem;
     color: #666;
 }
@@ -77,42 +77,13 @@ span{
 }
 .btn:hover{
     color: #fff;
+    background-color: var(--red);
 }
 span{
     color: var(--red);
-    font-size: 40px;
+    font-size: 36px;
 }
-.btn{
-    display: inline-block;
-    padding: .8rem 3rem;
-    border: 1rem solid var(--red);
-    color: var(--red);
-    cursor: pointer;
-    font-size: 32px;
-    border-radius: .5rem;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-    margin-top: 1rem;
-}
-.btn::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0%;
-    height: 100%;
-    background-color: var(--red);
-    transition: .3s linear;
-    z-index: -1;
-}
-.btn:hover::before{
-    width: 100%;
-    left: 0;
-}
-.btn:hover{
-    color: #fff;
-}
+
 header{
     position: fixed;
     top: 0;
@@ -136,7 +107,7 @@ header .logo i{
     color: var(--red);
 }
 header .navbar a{
-    font-size: 28px;
+    font-size: 24px;
     margin-left: 2rem;
     color: black;
 }
@@ -144,7 +115,7 @@ header .navbar a:hover{
     color: var(--red);
 }
 #menu-bar{
-    font-size: 3rem;
+    font-size: 16px;
     cursor: pointer;
     color: black;
     border: 1rem solid black;
@@ -185,10 +156,6 @@ header .navbar a:hover{
     }
 }
 
-.home .content h3{
-    font-size: 28px;
-    color: #666;
-}
 .home .content p{
     font-size: 24px;
     color: black;
@@ -280,7 +247,7 @@ header .navbar a:hover{
     padding-top: 1rem;
 }
 .popular .box-container .box .stars i{
-    color: var(--red);
+    color: var(--black);
     font-size: 1.7rem;
     padding: 1rem .1rem;
 }
@@ -319,7 +286,7 @@ header .navbar a:hover{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 .steps .box h3{
-    font-size: 24px;
+    font-size: 28px;
     color: black;
     padding: 1rem 0;
 }
@@ -422,6 +389,7 @@ header .navbar a:hover{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    padding-top: 20px;
     
 }
 .main_footer .share{
@@ -432,7 +400,7 @@ header .navbar a:hover{
 }
 .left{
     font-size: 24px;
-    line-height: 2rem;
+    line-height: 3rem;
     padding-left: 2rem;
     text-align: left;
     
@@ -505,7 +473,7 @@ header .navbar a:hover{
     font-size: 2rem;
 }
 .products-container i{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--black);
     background-color: var(--red);
     margin-left: 10px;
@@ -532,12 +500,14 @@ header .navbar a:hover{
     display: flex;
     align-items: center;
     font-size: 28px;
+    padding-right: 10px;
 }
 .product-quantity{
     width: 30%;
     display: flex;
     align-items: center;
     font-size: 28px;
+    padding-left: 10px;
 }
 .product-total{
     width: 10%;
@@ -549,6 +519,8 @@ header .navbar a:hover{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    font-size: 24px;
+   
 }
 .product{
     width: 45%;
@@ -556,7 +528,7 @@ header .navbar a:hover{
     justify-content: space-around;
     text-align: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 5px 10px;
 }
 
 .cartTotalContainer{
@@ -598,7 +570,6 @@ header .navbar a:hover{
 @media(max-width:991px){
     html{
         font-size: 80%;
-        align-items: center;
     }
     header{
         padding: 2rem;
@@ -629,19 +600,75 @@ header .navbar a:hover{
     }
     header .navbar a{
         margin: 1.5rem;
-        padding: 1.5rem;
+        padding: .5rem;
         display: block;
         border: 2rem solid rgba(0, 0, 0, .1);
         border-left: .5rem solid var(--red);
         background-color: #666;
     }
+    
 }
 @media(max-width:450px){
     html{
         font-size: 50%;
-        align-items: center;
     }
     .order .row form .inputBox input{
         width: 100%;
+    }
+    .products-container{
+        width: 425px;
+        margin-top: 25%;
+        align-items: center;
+    }
+    .product-header{
+        width: 100%;
+        max-width: 425px;
+        border-bottom: 4px solid var(--black);
+        margin: 0 auto;
+    }
+    .product span{
+        font-size: 20px;
+    }
+    .product-title{
+        width: 25%;
+        font-size: 20px;
+    }
+    .product-price{
+        width: 10%;
+        align-items: center;
+        font-size: 20px;
+        padding-right: 10px;
+        padding-left: 20px;
+    }
+    .product-quantity{
+        width: 15%;
+        font-size: 20px;
+        padding-left: 60px;
+    }
+    .product-total{
+        width: 5%;
+        align-items: center;
+        padding-left: 120px;
+        font-size: 20px;
+    }
+    .products{
+        width: 100%;
+    }
+    .product{
+        width: 25%;
+        align-items: center;
+    }
+    .cartTotalContainer{
+        width: 55%;
+    }
+    .cartTotalTitle{
+        width: 15%;
+        font-size: 20px;
+        padding-left: 120px;
+    }
+    .cartTotal{
+        width: 5%;
+        font-size: 20px;
+        padding-left: 120px;
     }
 }
