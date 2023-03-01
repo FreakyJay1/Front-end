@@ -397,38 +397,22 @@ header .navbar a:hover{
     gap: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 50px;
 }
-.left{
-    font-size: 24px;
-    line-height: 3rem;
-    padding-left: 2rem;
-    text-align: left;
-    
+.main_footer .ro1{
+   display: flex; 
+   justify-content: space-evenly;
+   text-align: center; 
+   padding: 5px;
+   padding-top: 25px;
+   font-size: 24px;
 }
-.left h3{
-    font-size: 28px;
-    color: black;
-    margin-left: 2rem;
-}
+
 .center{
     text-align: center;
+    padding-top: 125px;
 }
-.right{
-    display: flex;
-    flex-direction: column;
-    height: 50%;
-    font-size: 24px;
-    padding-right: 2rem;
-    text-align: right;
-}
-.right h3{
-    font-size: 28px;
-    color: black;
-    margin-right: 2rem;
-}
-.right .trading-hours{
-    list-style: none;
-}
+
 /* scroll button */
 #scroll-top{
     position: fixed;
@@ -492,23 +476,30 @@ header .navbar a:hover{
 }
 .product-title{
     width: 45%;
-    text-align: center;
+    display: flex;
+    align-items: center;
     font-size: 28px;
+    
 }
 .product-price{
     width: 15%;
     display: flex;
     align-items: center;
     font-size: 28px;
-    padding-right: 10px;
+    
 }
-.product-quantity{
+.product-quantity {
     width: 30%;
     display: flex;
     align-items: center;
     font-size: 28px;
-    padding-left: 10px;
+    padding: 20px;
 }
+
+.product-quantity > span{
+   padding-left: 50px;
+}
+
 .product-total{
     width: 10%;
     display: flex;
@@ -519,7 +510,7 @@ header .navbar a:hover{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    font-size: 24px;
+    font-size: 20px;
    
 }
 .product{
@@ -672,3 +663,6 @@ header .navbar a:hover{
         padding-left: 120px;
     }
 }
+
+
+

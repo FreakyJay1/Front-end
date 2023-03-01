@@ -101,14 +101,11 @@ function displayCart(){
         Object.values(cartItems).map(item => {
             productContainer.innerHTML +=`
             <div class="product">
-                <i class="fa fa-xmark"></i>
                 <span>${item.name}</span>
             </div>
             <div class="product-price">R${item.price},00</div>
             <div class="product-quantity">
-                <i class="fa fa-minus"></i>
-                <span>${item.inCart}</span>
-                <i class="fa fa-plus"></i>
+               <span>${item.inCart}</span>
             </div>
             <div class="product-total">R${item.inCart * item.price},00</div>
             `
